@@ -20,5 +20,8 @@ describe StockPicker do
     expect(stock_picker.pick([8, 2, 6])).to eq [1, 2]
   end
 
+  it "can calculate all the things" do
+    expect(stock_picker.pick([8, 2, 6, 22, 435, 34, 88])).to eq [1, 4]
+  end
 
 end
